@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Cooking Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎉 Cook It Your Way! 🍳</h1>
+        <p>Your imagination, your recipe! Drag ingredients into the pan and let's cook!</p>
+    </header>
+    <main>
+        <section id="ingredients-section">
+            <h2>🛒 Ingredients</h2>
+            
+            <!-- Category Selector -->
+            <div>
+                <label for="category">Select Category:</label>
+                <select id="category">
+                    <option value="veg">Veg</option>
+                    <option value="nonveg">Non-Veg</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+            
+            <div id="ingredient-list">
+                <!-- Ingredients will be added here dynamically based on the selected category -->
+            </div>
+        </section>
+        
+        <section id="pan-section">
+            <h2>🍳 Your Pan</h2>
+            <div id="pan" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxClaYbdU_MeoH6XV-aq7iW0tPlaAQGnO5fA&s" alt="Cooking Pan">
+                <div id="pan-contents"></div>
+            </div>
+            <button id="done-button">COOK!!</button>
+        </section>
+
+        <section id="recipe-section">
+            <h2>📜 Your Recipe</h2>
+            <div id="recipe"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>"Cooking is love made visible." ❤️</p>
+        <p>"A recipe has no soul. You, as the cook, must bring soul to the recipe." ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

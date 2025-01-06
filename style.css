@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #dbe2e2, #60d3d0);
+    margin: 0;
+    padding: 0;
+    color: #17252A;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #2B7A78;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(165, 171, 172, 0.2);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #FEFFFF;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #DEF2F1;
+  }
+  
+  /* Category Selector */
+  #category {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #57bca6;
+    color: white;
+    border: 1px solid #ccc;
+  }
+  
+  #category:focus {
+    outline: none;
+    border-color: #57bca6;
+  }
+  
+  /* Ingredients Section */
+  #ingredients-section {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #4a4e69;
+  }
+  
+  #ingredient-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* 5 items per row */
+    gap: 15px;
+    justify-content: center;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+  
+  .ingredient {
+    background: linear-gradient(135deg, white, rgb(201, 228, 232));
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+    text-align: center;
+  }
+  
+  .ingredient:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #adc7ca, #75bac2);
+  }
+  
+  /* Pan Section */
+   #pan-section {
+    padding: 20px;
+  }
+  
+  /* #pan {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #6c757d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fdfdfd;
+    transition: background 0.3s;
+  }
+  
+  #pan img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  #pan-contents {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }  *
+  /
+  /* Pan Section */
+/* Pan Section */
+#pan {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #6c757d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fdfdfd;
+  transition: transform 0.3s ease;
+}
+
+#pan img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#pan-contents {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  font-size: 1rem;  /* Ensure font size remains fixed */
+}
+
+.ingredient-in-pan {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+  
+
+  
+  #done-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #2b7a78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #done-button:hover {
+    background-color: #000000;
+  }
+  
+  /* Recipe Section */
+  #recipe-section {
+    padding: 20px;
+    background-color: #DEF2F1;
+    margin-top: 20px;
+    border-top: 2px solid #18aba8;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #recipe {
+    font-size: 1.2rem;
+    color: #4a4e69;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #4a4e69;
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+  /* Styling for the remove button on pan ingredients */
+.remove-button {
+    background: none;
+    border: none;
+    color: #4a4e69;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+
+.remove-button:hover {
+    transform: scale(1.2);
+}
+
+  
